@@ -1,0 +1,106 @@
+*
+body
+{
+	background-color: hsl(0, 0%, 95%);
+	height: 96vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.container
+{
+	display: flex;
+	height: 500px;
+	width: 900px;
+	text-align: left;
+}
+.tab1
+{
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 0.6rem 0 0 0.6rem;
+}
+.tab2
+{
+	background-color: hsl(184, 100%, 22%); 
+}
+.tab3
+{
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0.6rem 0.6rem 0;
+}
+img
+{
+	margin: 2.5em;
+	margin-bottom: 1.5em;
+}
+p
+{
+	font-size: 15px;
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	font-weight: 400;
+	margin-left: 3em;
+	margin-top: 2em;
+	margin-right: 3.5em;
+	line-height: 25px;
+	max-height: 150px;
+}
+h2
+{
+	font-family: sans-serif;
+	color: hsl(0, 0%, 95%);
+	font-size: 28px;
+	font-weight: 700;
+	margin-left: 1.5em;
+	margin-top: 0em;
+}
+.button
+{
+	font-size: 14px;
+	margin-top: 90px;
+	margin-left: 40px;
+	padding: 12px 30px;
+	border-radius: 20px;
+	cursor: pointer;
+	border-color: white;
+}
+.button:hover
+{
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+.tab1 button
+{
+	color: hsl(31, 77%, 52%);
+}
+.tab2 button
+{
+	color: hsl(184, 100%, 22%);
+}
+.tab3 button
+{
+	color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 850px)
+{
+	.container
+	{
+		display: grid;
+		width: 300px;
+	}
+	.tab1
+	{
+		border-radius: 0.6rem 0.6rem 0 0;
+	}
+	.tab3
+	{
+		border-radius: 0 0 0.6rem 0.6rem;
+	}
+	.button
+	{
+		margin-bottom: 20px;
+	}
+}
